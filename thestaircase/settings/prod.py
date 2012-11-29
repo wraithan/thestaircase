@@ -8,4 +8,4 @@ SENTRY_DSN = getenv('SENTRY_DSN', None)
 SITE_URL = 'thestaircase.org'
 STATIC_URL = 'http://media.thestaircase.org/static/'
 
-INSTALLED_APPS += ('raven.contrib.django',)
+INSTALLED_APPS += ('raven.contrib.django', 'gunicorn')
