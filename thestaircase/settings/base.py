@@ -14,6 +14,7 @@ MANAGERS = ADMINS
 
 ROOT_DIR = dirname(dirname(abspath(__file__ + '/../')))
 SQLITE_PATH = join(ROOT_DIR, 'dev.db')
+STATIC_ROOT = join(ROOT_DIR, 'static/')
 
 DATABASES = {
     'default': dj_database_url.config(default='sqlite:///' + SQLITE_PATH)
@@ -55,7 +56,6 @@ MEDIA_URL = ''
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/var/www/example.com/static/"
-STATIC_ROOT = ''
 
 # URL prefix for static files.
 # Example: "http://example.com/static/", "http://static.example.com/"
