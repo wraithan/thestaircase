@@ -1,0 +1,50 @@
+{% load url from future %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- <link rel="icon" type="image/x-icon" href="{{STATIC_URL}}images/favicon.ico"> -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="{{STATIC_URL}}css/bootstrap.min.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="{{STATIC_URL}}css/base.css" type="text/css" media="screen" />
+    <title>TheStaircase - An Alternate Improvement Method</title>
+    {% block head %}
+    {% endblock head %}
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="brand" href="{% url 'home' %}">TheStaircase</a>
+            <ul class="nav">
+              <li><a href="{% url 'about' %}">About</a></li>
+            </ul>
+            <!-- <ul class="nav pull-right"> -->
+            <!--   <li> -->
+            <!--     <a href="#">login</a> -->
+            <!--   </li> -->
+            <!-- </ul> -->
+          </div>
+        </div>
+      </div>
+      {% block content %}
+      {% endblock content %}
+      <footer class="footer">
+        <div><a href="http://www.teamliquid.net/forum/viewmessage.php?topic_id=374400">TheStaircase</a> is a improvement method designed by <a href="http://thejakatak.com">TheJaKaTaK</a>. <a href="{% url 'home' %}">thestaircase.org</a> is an <a href="https://github.com/wraithan/thestaircase/">open source</a> project by <a href="http://blog.wraithan.net/">Wraithan</a>. You can report issues and request features on <a href="https://github.com/wraithan/thestaircase/issues">github</a></div>
+      </footer>
+    </div>
+    <script type="text/javascript">
+      var _gauges = _gauges || [];
+      (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '509d317ef5a1f535c2000042');
+        t.src = '//secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+      })();
+    </script>
+  </body>
+<html>
