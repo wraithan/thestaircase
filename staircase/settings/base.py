@@ -96,10 +96,10 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'thestaircase.urls'
+ROOT_URLCONF = 'staircase.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'thestaircase.wsgi.application'
+WSGI_APPLICATION = 'staircase.wsgi.application'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or
@@ -116,7 +116,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
-    'thestaircase.core',
+    'staircase.core',
 )
 
 # A sample logging configuration. The only tangible logging
