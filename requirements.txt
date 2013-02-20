@@ -1,4 +1,4 @@
-https://www.djangoproject.com/download/1.5b2/tarball/
+https://www.djangoproject.com/download/1.5c2/tarball/
 dj-database-url==0.2.1
 django-model-utils==1.2.0
 gunicorn==0.15.0
